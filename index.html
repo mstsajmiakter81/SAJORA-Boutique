@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SAJORA Boutique — Elegance, Crafted Just for You</title>
+<meta name="description" content="SAJORA Boutique — Handmade bangles, churi, bridal jewelry and luxury fashion accessories. Elegance, crafted just for you. Worldwide shipping." />
+<meta property="og:title" content="SAJORA Boutique — Luxury Handmade Jewelry" />
+<meta property="og:description" content="Elegance, Crafted Just for You. Handmade bangles, bridal collections & customized jewelry." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1200" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="home">
+
+<!-- ==================== ANNOUNCEMENT BAR ==================== -->
+<div class="announce-bar" role="region" aria-label="Promotional announcements">
+  <div class="announce-track">
+    <span>Complimentary worldwide shipping on orders over ৳5,000</span>
+    <span class="dot">·</span>
+    <span>Bridal Collection 2025 — Now Available</span>
+    <span class="dot">·</span>
+    <span>Custom orders handcrafted in 7–10 days</span>
+  </div>
+</div>
+
+<!-- ==================== HEADER ==================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+
+    <button class="icon-btn d-lg-none" id="menuToggle" aria-label="Open menu">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <a class="brand" href="index.html" aria-label="SAJORA Boutique home">
+      <span class="brand-mark">SAJORA</span>
+      <span class="brand-sub">BOUTIQUE</span>
+    </a>
+
+    <nav class="main-nav d-none d-lg-flex" aria-label="Primary">
+      <a href="index.html" class="is-active">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="shop.html#collections">Collections</a>
+      <a href="customize.html">Customize</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search"><i class="bi bi-search"></i></button>
+      <a class="icon-btn d-none d-sm-inline-flex" href="login.html" aria-label="Account"><i class="bi bi-person"></i></a>
+      <a class="icon-btn" href="wishlist.html" aria-label="Wishlist">
+        <i class="bi bi-heart"></i>
+        <span class="badge-count" data-wishlist-count>0</span>
+      </a>
+      <a class="icon-btn" href="cart.html" aria-label="Shopping bag">
+        <i class="bi bi-bag"></i>
+        <span class="badge-count" data-cart-count>0</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Search overlay -->
+  <div class="search-panel" id="searchPanel" aria-hidden="true">
+    <div class="container">
+      <form class="search-form" onsubmit="event.preventDefault(); window.location.href='shop.html?q='+encodeURIComponent(this.q.value)">
+        <i class="bi bi-search"></i>
+        <input type="search" name="q" placeholder="Search bangles, bridal, pearl…" aria-label="Search products" />
+        <button type="button" class="icon-btn" id="searchClose" aria-label="Close search"><i class="bi bi-x-lg"></i></button>
+      </form>
+      <div class="search-hints">
+        <span>Popular:</span>
+        <a href="shop.html?q=bridal">Bridal</a>
+        <a href="shop.html?q=churi">Churi</a>
+        <a href="shop.html?q=pearl">Pearl</a>
+        <a href="shop.html?q=gold">Gold</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="brand-mark">SAJORA</span>
+    <button class="icon-btn" id="drawerClose" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <nav class="drawer-nav">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html#collections">Collections</a>
+    <a href="customize.html">Customize</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="wishlist.html">Wishlist</a>
+    <a href="account.html">My Account</a>
+  </nav>
+  <div class="drawer-foot">
+    <p class="eyebrow">Elegance, Crafted Just for You</p>
+  </div>
+</aside>
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+<main>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" aria-label="Featured campaign">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=2000&q=80"
+           alt="Handcrafted gold bangle resting on silk fabric in warm light"
+           loading="eager" />
+      <div class="hero-veil"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="eyebrow reveal">SAJORA Boutique — Est. Dhaka</p>
+      <h1 class="hero-title reveal">Elegance,<br/>Crafted Just for You.</h1>
+      <p class="hero-lead reveal">
+        Handmade bangles, bridal heirlooms, and modern keepsakes —
+        sculpted by artisans for women who wear stories, not trends.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="shop.html" class="btn btn-primary">Shop Collection <i class="bi bi-arrow-right"></i></a>
+        <a href="customize.html" class="btn btn-ghost">Customize Your Style</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span><span class="line"></span>
+    </div>
+  </section>
+
+  <!-- ==================== SHOP BY CATEGORY ==================== -->
+  <section class="section section-categories" id="collections">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow">The Collections</p>
+        <h2 class="section-title">Curated for Every Chapter</h2>
+        <p class="section-lead">Four ateliers of craft — from everyday churi to bridal heirlooms.</p>
+      </header>
+
+      <div class="category-grid">
+        <a href="shop.html?cat=bangles" class="cat-card cat-tall">
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&q=80"
+               alt="Stack of handmade gold bangles on cream fabric" loading="lazy" />
+          <div class="cat-body">
+            <p class="eyebrow">01</p>
+            <h3>Bangles & Churi</h3>
+            <span class="cat-link">Explore <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="shop.html?cat=bridal" class="cat-card cat-wide">
+          <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=80"
+               alt="Bridal gold jewelry set arranged on marble" loading="lazy" />
+          <div class="cat-body">
+            <p class="eyebrow">02</p>
+            <h3>Bridal Collection</h3>
+            <span class="cat-link">Explore <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="shop.html?cat=party" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=80"
+               alt="Elegant statement earrings for party wear" loading="lazy" />
+          <div class="cat-body">
+            <p class="eyebrow">03</p>
+            <h3>Party Wear</h3>
+            <span class="cat-link">Explore <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+
+        <a href="shop.html?cat=handmade" class="cat-card">
+          <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=1000&q=80"
+               alt="Artisan handmade beaded jewelry on neutral backdrop" loading="lazy" />
+          <div class="cat-body">
+            <p class="eyebrow">04</p>
+            <h3>Handmade Collection</h3>
+            <span class="cat-link">Explore <i class="bi bi-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BEST SELLERS ==================== -->
+  <section class="section section-bestsellers">
+    <div class="container">
+      <header class="section-head section-head-row">
+        <div>
+          <p class="eyebrow">Adored by Our Clients</p>
+          <h2 class="section-title">Best Sellers</h2>
+        </div>
+        <a href="shop.html" class="link-arrow">View All Products <i class="bi bi-arrow-right"></i></a>
+      </header>
+
+      <div class="product-grid" id="bestSellersGrid"><!-- rendered by JS --></div>
+    </div>
+  </section>
+
+  <!-- ==================== CUSTOMIZE BANNER ==================== -->
+  <section class="custom-banner" aria-label="Customize your jewelry">
+    <div class="custom-banner-media">
+      <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=2000&q=80"
+           alt="Artisan hands shaping handmade jewelry at a wooden workbench" loading="lazy" />
+    </div>
+    <div class="container custom-banner-content">
+      <p class="eyebrow">Bespoke Atelier</p>
+      <h2 class="custom-title">Design a piece that exists only for you.</h2>
+      <p class="custom-lead">
+        Choose your bangle size, palette, and silhouette. Our artisans hand-finish each commission
+        in 7–10 days — photographed and shipped to your door.
+      </p>
+      <a href="customize.html" class="btn btn-light">Start Your Custom Order <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- ==================== NEW ARRIVALS ==================== -->
+  <section class="section section-arrivals">
+    <div class="container">
+      <header class="section-head section-head-row">
+        <div>
+          <p class="eyebrow">Just Arrived</p>
+          <h2 class="section-title">New Arrivals</h2>
+        </div>
+        <a href="shop.html?sort=new" class="link-arrow">Shop New <i class="bi bi-arrow-right"></i></a>
+      </header>
+      <div class="product-grid" id="arrivalsGrid"><!-- rendered by JS --></div>
+    </div>
+  </section>
+
+  <!-- ==================== BRAND STORY ==================== -->
+  <section class="section section-story">
+    <div class="container story-grid">
+      <div class="story-media">
+        <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1400&q=80"
+             alt="Editorial still life of pearl and gold jewelry on blush silk" loading="lazy" />
+        <div class="story-media-caption">
+          <span class="eyebrow">Since 2019</span>
+          <p>Handmade in Dhaka, worn worldwide.</p>
+        </div>
+      </div>
+      <div class="story-body">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="section-title">Every piece begins with a pair of hands.</h2>
+        <p>
+          SAJORA Boutique was born from a simple belief: that jewelry should feel personal, not mass-produced.
+          We partner with a small circle of Bangladeshi artisans who hand-string, hand-set, and hand-polish
+          every bangle, churi, and heirloom in our collection.
+        </p>
+        <p>
+          From traditional glass churi in jewel tones to bridal sets in gold and pearl,
+          each SAJORA piece carries the fingerprints of its maker — and the story of the woman who wears it.
+        </p>
+        <a href="about.html" class="link-arrow">Read Our Story <i class="bi bi-arrow-right"></i></a>
+
+        <div class="story-stats">
+          <div><strong>12k+</strong><span>Happy clients</span></div>
+          <div><strong>3,400</strong><span>Custom pieces crafted</span></div>
+          <div><strong>24</strong><span>Countries shipped</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="section section-testimonials">
+    <div class="container">
+      <header class="section-head text-center">
+        <p class="eyebrow">Kind Words</p>
+        <h2 class="section-title">Loved by Our Clients</h2>
+      </header>
+
+      <div class="testimonial-grid">
+        <figure class="testimonial">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <blockquote>“The bridal set was even more beautiful in person. Every guest asked where I got my bangles — I felt like SAJORA had been made for me.”</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Portrait of client Nusrat A." loading="lazy" />
+            <div><strong>Nusrat A.</strong><span>Bridal client · Dhaka</span></div>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <blockquote>“I ordered a custom churi as a gift. The artisan sent photos before shipping — a level of care I've never had from a jewelry brand.”</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=200&q=80" alt="Portrait of client Ayesha R." loading="lazy" />
+            <div><strong>Ayesha R.</strong><span>Custom order · London</span></div>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial">
+          <div class="stars" aria-label="5 out of 5 stars">
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+          </div>
+          <blockquote>“Packaging, quality, and delivery — all flawless. My pearl set arrived in a keepsake box that I now use every day.”</blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=200&q=80" alt="Portrait of client Farah K." loading="lazy" />
+            <div><strong>Farah K.</strong><span>Pearl collection · Dubai</span></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INSTAGRAM GALLERY ==================== -->
+  <section class="section section-instagram">
+    <div class="container">
+      <header class="section-head text-center">
+        <p class="eyebrow">@sajoraboutique</p>
+        <h2 class="section-title">The SAJORA World</h2>
+        <p class="section-lead">Boutique stills, artisan studios, and our clients' stories.</p>
+      </header>
+    </div>
+    <div class="insta-grid">
+      <a href="#" aria-label="View on Instagram"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80" alt="Gold bangles styled on ivory" loading="lazy" /></a>
+      <a href="#" aria-label="View on Instagram"><img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=80" alt="Handmade bangle stack" loading="lazy" /></a>
+      <a href="#" aria-label="View on Instagram"><img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=800&q=80" alt="Beaded handmade jewelry flat lay" loading="lazy" /></a>
+      <a href="#" aria-label="View on Instagram"><img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=800&q=80" alt="Pearl necklace on blush silk" loading="lazy" /></a>
+      <a href="#" aria-label="View on Instagram"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80" alt="Statement party earrings" loading="lazy" /></a>
+      <a href="#" aria-label="View on Instagram"><img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=80" alt="Artisan making handmade jewelry" loading="lazy" /></a>
+    </div>
+  </section>
+
+  <!-- ==================== NEWSLETTER ==================== -->
+  <section class="section section-newsletter">
+    <div class="container newsletter-inner">
+      <div>
+        <p class="eyebrow">The SAJORA Circle</p>
+        <h2 class="section-title">Be first to know.</h2>
+        <p class="section-lead">Private launches, artisan stories, and early access — delivered monthly. No noise.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm" novalidate>
+        <label for="nlEmail" class="visually-hidden">Email address</label>
+        <input type="email" id="nlEmail" name="email" placeholder="Your email address" required autocomplete="email" />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <p class="form-note" id="nlNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark">SAJORA</span>
+      <span class="brand-sub">BOUTIQUE</span>
+      <p class="footer-tag">Elegance, Crafted Just for You.</p>
+      <p class="footer-desc">
+        Handmade bangles, bridal heirlooms, and modern keepsakes —
+        crafted by artisans in Dhaka, shipped worldwide.
+      </p>
+      <div class="social-row" aria-label="Social links">
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <nav class="footer-col" aria-label="Shop">
+      <h4>Shop</h4>
+      <a href="shop.html?cat=bangles">Bangles & Churi</a>
+      <a href="shop.html?cat=bridal">Bridal Collection</a>
+      <a href="shop.html?cat=party">Party Wear</a>
+      <a href="shop.html?cat=handmade">Handmade</a>
+      <a href="customize.html">Custom Orders</a>
+    </nav>
+
+    <nav class="footer-col" aria-label="Support">
+      <h4>Client Care</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="shipping.html">Shipping Policy</a>
+      <a href="returns.html">Returns & Refunds</a>
+      <a href="track.html">Track Order</a>
+    </nav>
+
+    <nav class="footer-col" aria-label="Company">
+      <h4>The House</h4>
+      <a href="about.html">About SAJORA</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="account.html">My Account</a>
+      <a href="orders.html">My Orders</a>
+      <a href="wishlist.html">Wishlist</a>
+    </nav>
+  </div>
+
+  <div class="container footer-bottom">
+    <p class="footer-copy">© <span id="year"></span> SAJORA Boutique. All rights reserved.</p>
+    <div class="payment-row" aria-label="Payment methods accepted">
+      <span class="pay-pill">bKash</span>
+      <span class="pay-pill">Nagad</span>
+      <span class="pay-pill">Visa</span>
+      <span class="pay-pill">Mastercard</span>
+      <span class="pay-pill">PayPal</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Toast container -->
+<div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="true"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/data/products.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  /* Homepage-specific render (uses shared data + API from main.js) */
+  document.addEventListener('DOMContentLoaded', () => {
+    const bestGrid = document.getElementById('bestSellersGrid');
+    const arrGrid  = document.getElementById('arrivalsGrid');
+    if (bestGrid) Sajora.renderProducts(bestGrid, Sajora.products.filter(p => p.bestseller).slice(0, 8));
+    if (arrGrid)  Sajora.renderProducts(arrGrid,  Sajora.products.filter(p => p.isNew).slice(0, 4));
+  });
+</script>
+</body>
+</html>
